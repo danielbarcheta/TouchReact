@@ -14,11 +14,12 @@ const Navbar = () => {
         <button>  
         <span class="material-symbols-outlined">home</span>
         </button>
-        <button>Call of Code</button>
-        <button>Treinamentos Oferecidos</button>
+        <button>COC</button>
+        <button>Treinamentos</button>
         <button>Mentores</button>
         <button>Equipes</button>
         <button>Feedbacks</button>
+        <button>ReactJS</button>
       </div>
       <div className="search">
         <input type="text" placeholder="Search..." />
