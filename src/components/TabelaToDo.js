@@ -2,7 +2,17 @@ import React from 'react';
 import ToDoItemLinha from './ToDoItemLinha';
 
 
+
 function TabelaToDo(props) {
+
+    const adicionarTarefa = () => {
+          const novaTarefa = {
+            numeroLinha: props.todos.length + 1, descricao: 'Nova Tarefa'
+          }
+          props.setTodos([...props.todos, novaTarefa]); // Atualiza os dados usando a função setTodos
+        
+      }
+      
     return (
         <table>
             <thead>
@@ -27,7 +37,7 @@ function TabelaToDo(props) {
                     />
                 ))
             }
-            
+            <button onClick={adicionarTarefa}>Adicionar Tarefa</button>
             </tbody>
         </table>
     );
