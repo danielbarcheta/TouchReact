@@ -1,11 +1,15 @@
 import React from 'react';
 
-function ToDoItemLinha() {
+
+function ToDoItemLinha(props) {
     return (
         <tr>
-            <th scope='row'>1</th>
-            <td>Tomar um cafézinho</td>
+            <th scope='row'>{props.numeroLinha}</th>
+            <td>{props.descricao}</td>
+            {console.log(props)}
         </tr>
+
+
     );
 }
 
@@ -14,7 +18,7 @@ export default ToDoItemLinha;
 
 
 
-// ESTRUTURA DO NOSSO PRIMEIRO COMPONENTE!
+// 1- ESTRUTURA DO NOSSO PRIMEIRO COMPONENTE!
 
 
 /* Note que quando adicionamos mais de um elemento JSX (no caso, mais de um <tr> </tr>), precisamos encapsula-los dentro de uma div.
@@ -38,6 +42,14 @@ que cria um container invisivel que nao ira afetar a estrutura da nossa DOM :
 }
 
 export default ToDoItemLinha;
+
+*/
+
+// 2- PASSANDO DADOS DINAMICAMENTE PARA OS COMPONENTES USANDO PROPS
+
+/* IMPORTANTE!!
+ Sempre que  inserimos elementos Javascript dentro dos nossos elementos JSX precisamos coloca-los entre { }.
+
 
 */
 

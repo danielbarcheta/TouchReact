@@ -11,7 +11,18 @@ function Tabela() {
                 </tr>
             </thead>
             <tbody>
-                <ToDoItemLinha />
+                <ToDoItemLinha 
+                numeroLinha="1" 
+                descricao="Tomar um cafezinho"
+                />
+                <ToDoItemLinha 
+                numeroLinha="2" 
+                descricao="Dar bom dia pro pessoal da touch no discord"
+                />
+                <ToDoItemLinha 
+                numeroLinha="3" 
+                descricao="Fazer ginastica laboral"
+                />
             </tbody>
         </table>
     );

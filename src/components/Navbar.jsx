@@ -6,13 +6,13 @@ import './Navbar.css';
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <section class="Nav-content">
+      <section className="Nav-content">
       <span className="logo">
         <img src="logo-touch-health.png" alt="Touch Health Logo" />
       </span>
       <div className="menu">
         <button>  
-        <span class="material-symbols-outlined">home</span>
+        <span className="material-symbols-outlined">home</span>
         </button>
         <button>COC</button>
         <button>Treinamentos</button>
@@ -23,7 +23,7 @@ const Navbar = () => {
       </div>
       <div className="search">
         <input type="text" placeholder="Search..." />
-        <button class="search-button"><span class="material-symbols-outlined">search</span>
+        <button className="search-button"><span className="material-symbols-outlined">search</span>
         </button>
       </div>
       </section>
