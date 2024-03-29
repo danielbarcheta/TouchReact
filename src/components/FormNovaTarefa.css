@@ -1,40 +1,48 @@
 .Formulario {
-    margin: 2em;
-    width: 40%;
-  }
-  
-  .form-label {
-    display: block; 
-    margin-bottom: 5px; 
-  }
-  
-  .controle-formulario {
-    width: 100%; 
-    height: 2.5em;
-    padding: 8px; 
-    border: 1px solid #ccc;
-    border-radius: 4px; 
-  }
+  margin: 2em;
+  width: 50%;
+}
 
-  .controle-formulario:focus {
-    border: 3px solid #007bff;
-  }
-  
-  .btn {
-    padding: 10px 20px; 
-    background-color: #4CAF50; 
-    color: #fff; 
-    border: none; 
-    border-radius: 4px; 
-    cursor: pointer; 
-  }
-  
-  .btn:hover {
-    background-color: #4CAF50; 
-  }
+.form {
+  display: flex;
+  align-items: center;
+  margin: 2em;
+  position: relative;
+}
 
-  .btn:hover {
-    background-color: #38823c;
-  }
-  
-  
+h2 {
+  font-size: 30px;
+  font-family: 'Indie Flower', cursive;
+  color:#00668e;
+}
+
+.form-label {
+  display: block; 
+  margin-bottom: 5px; 
+}
+
+.controle-formulario {
+  flex: 1;
+  height: 2.5em;
+  padding: 8px; 
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+}
+
+.controle-formulario:focus {
+  border: 3px solid #007bff;
+}
+
+.btn {
+  padding: 8px 20px; 
+  background-color: #3c7b4b; 
+  color: #fff; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  margin-left: 10px;
+}
+
+.btn:hover {
+  background-color: #b1b1b1;
+}

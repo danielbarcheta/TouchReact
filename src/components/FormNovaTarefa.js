@@ -32,10 +32,11 @@ const submitTarefa = () => {
                         className='controle-formulario' 
                         ows={3} 
                         required
+                        value={descricao}
                         onChange={mudaDescricao}>
                     </textarea>
+                    <button type='button' className="btn btn-primario" onClick={submitTarefa}>ADD</button>
                 </div>
-                <button type='button' className="btn btn-primario" onClick={submitTarefa}>Add Tarefa</button>
             </form>
         </div>
     )
