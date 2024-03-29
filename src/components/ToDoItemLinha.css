@@ -1,0 +1,12 @@
+th {
+    font-weight: normal;
+  }
+  
+  td {
+    font-style: italic;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  

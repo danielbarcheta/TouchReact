@@ -1,4 +1,5 @@
 import React from 'react';
+import './ToDoItemLinha.css';
 
 
 function ToDoItemLinha(props) {

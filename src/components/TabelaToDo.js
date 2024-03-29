@@ -1,4 +1,5 @@
 import React from 'react';
+import './TabelaToDo.css';
 import ToDoItemLinha from './ToDoItemLinha';
 
 

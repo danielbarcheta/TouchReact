@@ -1,0 +1,42 @@
+table {
+    width: 40%;
+    border-collapse: collapse;
+    margin:  2em;
+  }
+  
+  thead {
+    background-color: #f2f2f2;
+  }
+  
+  th, td {
+    padding: 7px;
+    text-align: left;
+    border-bottom: 5px solid #f1efef;
+  }
+  
+  td {
+    width: 99%; /* Definindo a largura da célula de dados */
+    text-align: center;
+  }
+  
+  
+  th {
+    background-color: #00668e;
+    color: white;
+    text-align: center;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #38823c;
+  }
+  

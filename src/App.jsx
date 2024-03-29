@@ -1,5 +1,7 @@
-import Navbar from "./components/Navbar";import TabelaToDo from "./components/TabelaToDo";
+import Navbar from "./components/Navbar";
+import TabelaToDo from "./components/TabelaToDo";
 import React, {useState} from 'react';
+import FormNovaTarefa from "./components/FormNovaTarefa";
 
 
 // PODERIAMOS PENSAR EM FAZER DA SEGUINTE FORMA: 
@@ -30,6 +32,7 @@ function App() {
     <div className="App">
       <Navbar/>
       <TabelaToDo todos={todos} setTodos={setTodos}/>
+      <FormNovaTarefa todos={todos} setTodos={setTodos}/>
 
     </div>
   );
