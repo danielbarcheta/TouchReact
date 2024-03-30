@@ -11,7 +11,7 @@ function TabelaToDo(props) {
         <table>
             <thead>
                 <tr>
-                    <th class="cabecalho2">Tarefas</th>
+                    <th className="cabecalho2">Tarefas</th>
                 </tr>
             </thead>
             <tbody>
@@ -25,6 +25,7 @@ function TabelaToDo(props) {
             {   
             props.todos.map((toDoRow) => (
                     <ToDoItemLinha 
+                        key={toDoRow.numeroLinha} // Serve para identificar unicamente cada componente filho da lista. Se removermos -> Warning no Console!!
                         numeroLinha={toDoRow.numeroLinha}
                         descricao={toDoRow.descricao}
                     />

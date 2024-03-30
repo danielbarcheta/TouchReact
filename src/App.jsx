@@ -7,10 +7,10 @@ import FormNovaTarefa from "./components/FormNovaTarefa";
 
 function App() {
   const [todos, setTodos] = useState([
-    {numeroLinha: "1", descricao: "Tomar um cafezinho"},
-    {numeroLinha: "2", descricao: "Ligar o Notebook da Touch"},
-    {numeroLinha: "3", descricao: "Abrir o Discord e dar bom dia pro pessoal"},
-    {numeroLinha: "4", descricao: "Prestar atencao nas aulitas de React"}
+    {numeroLinha: 1, descricao: "Tomar um cafezinho"},
+    {numeroLinha: 2, descricao: "Ligar o Notebook da Touch"},
+    {numeroLinha: 3, descricao: "Abrir o Discord e dar bom dia pro pessoal"},
+    {numeroLinha: 4, descricao: "Prestar atencao nas aulitas de React"}
   ]);
 
   return (

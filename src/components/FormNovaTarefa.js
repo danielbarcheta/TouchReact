@@ -10,13 +10,20 @@ const mudaDescricao = (event) => {
     setDescricao(event.target.value);
 }
 
-
+//Note que escrevemos essa funcao pensando na futura exclusao de elementos da lista.
 const submitTarefa = () => {
-    if (descricao !== ''){
-        const novaTarefa = {
-            numeroLinha: props.todos.length + 1, descricao: descricao
-          }
+    let numeroLinha;
+    let novaTarefa = {
+        numeroLinha: numeroLinha, descricao: descricao
+      }
 
+    if (descricao !== ''){
+        if(props.todos.length > 0){
+            novaTarefa.numeroLinha = props.todos[props.todos.length - 1].numeroLinha + 1;
+        }
+        else{
+            novaTarefa.numeroLinha = 1;
+        }
           props.setTodos([...props.todos, novaTarefa]); 
           setDescricao('');
         
