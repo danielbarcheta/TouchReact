@@ -23,6 +23,12 @@ const submitTarefa = () => {
     }
 }
 
+const handleKeyDown = (event) => {
+    if (event.keyCode === 13) { 
+      submitTarefa(); 
+    }
+  }
+
     return (
         <div className='Formulario'>
             <h2>Adicione uma nova tarefa!</h2>
@@ -33,7 +39,8 @@ const submitTarefa = () => {
                         ows={3} 
                         required
                         value={descricao}
-                        onChange={mudaDescricao}>
+                        onChange={mudaDescricao}
+                        onKeyDown={handleKeyDown}>
                     </textarea>
                     <button type='button' className="btn btn-primario" onClick={submitTarefa}>ADD</button>
                 </div>

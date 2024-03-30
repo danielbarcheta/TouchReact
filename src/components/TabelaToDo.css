@@ -6,10 +6,9 @@ table {
 
   th, td {
     padding: 10px;
-    padding-left: 30px;
     text-align: left;
     border-bottom: 10px solid #ffffff;
-    border-radius:13px;
+    border-top-right-radius:15px;
   }
 
   td {
@@ -19,13 +18,14 @@ table {
   
   
   th {
-    background-color: #00668e;
-    color: white;
+    color: #00668e;
+    font-size: 1em;
+    text-align: center;
+    background-color: white;
   }
   
-
-  .cabecalho {
-    background-color: #ffffff;
-    color: #00668e;
-    text-align: center;
-  }
+.cabecalho2{
+  background-color: #00668e;
+  color: white;
+  font-size: 1.5em;
+}

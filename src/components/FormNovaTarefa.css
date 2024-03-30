@@ -6,11 +6,11 @@
 .form {
   display: flex;
   align-items: center;
-  margin: 2em;
   position: relative;
 }
 
 h2 {
+  text-align: left;
   font-size: 30px;
   font-family: 'Indie Flower', cursive;
   color:#00668e;

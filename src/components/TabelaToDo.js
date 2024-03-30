@@ -11,8 +11,7 @@ function TabelaToDo(props) {
         <table>
             <thead>
                 <tr>
-                    <th class="cabecalho"></th>
-                    <th>Tarefa</th>
+                    <th class="cabecalho2">Tarefas</th>
                 </tr>
             </thead>
             <tbody>
