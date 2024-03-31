@@ -4,7 +4,7 @@ import './ToDoItemLinha.css';
 
 function ToDoItemLinha(props) {
     return (
-        <tr>
+        <tr onClick={() => props.deletarTarefa(props.numeroLinha)}>
             <th scope='row'>{props.numeroLinha}</th>
             <td>{props.descricao}</td>
             {console.log(props)}
@@ -18,6 +18,8 @@ export default ToDoItemLinha;
 
 
 
+
+//******/ ->  Note que, se removermos essa arrowFunction, deletarTarefa sera executado automaticamente ao renderizar a pagina! 
 
 // 1- ESTRUTURA DO NOSSO PRIMEIRO COMPONENTE!
 
@@ -50,7 +52,6 @@ export default ToDoItemLinha;
 
 /* IMPORTANTE!!
  Sempre que  inserimos elementos Javascript dentro dos nossos elementos JSX precisamos coloca-los entre { }.
-
 
 */
 

@@ -5,3 +5,15 @@
     text-align: center;
   }
 
+.botao-primario{
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  font-size: 4em;
+  font-family: 'Indie Flower', cursive;
+}
+
+.botao-primario:hover{
+  background-color: transparent;
+  color: #00668e;
+}

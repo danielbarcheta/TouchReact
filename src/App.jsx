@@ -6,6 +6,9 @@ import TabelaToDo from "./components/TabelaToDo";
 import FormNovaTarefa from "./components/FormNovaTarefa";
 
 function App() {
+  const [mostraFormulario, setMostraFormulario] = useState(false);
+  const [mostraBotao, setMostraBotao] = useState(true); // Estado para controlar a visibilidade do botão
+
   const [todos, setTodos] = useState([
     {numeroLinha: 1, descricao: "Tomar um cafezinho"},
     {numeroLinha: 2, descricao: "Ligar o Notebook da Touch"},
@@ -13,13 +16,20 @@ function App() {
     {numeroLinha: 4, descricao: "Prestar atencao nas aulitas de React"}
   ]);
 
-  return (
+  const handleButtonClick = () => {
+    setMostraFormulario(!mostraFormulario);
+    setMostraBotao(false); // Oculta o botão quando clicado
+  };
 
+  return (
     <div className="App">
       <Navbar/>
-      <div className='container'> {/* Adicione a classe 'container' aqui */}
+      {mostraBotao && <button className="botao-primario" onClick={handleButtonClick}>Adicionar Tarefas</button>}
+      <div className='container'>
         <TabelaToDo todos={todos} setTodos={setTodos}/>
-        <FormNovaTarefa todos={todos} setTodos={setTodos}/>
+        {mostraFormulario && 
+         <FormNovaTarefa todos={todos} setTodos={setTodos}/>
+        }
       </div>
     </div>
   );

@@ -17,7 +17,7 @@ const submitTarefa = () => {
         numeroLinha: numeroLinha, descricao: descricao
       }
 
-    if (descricao !== ''){
+    if (descricao !== '' && props.todos.length < 16){
         if(props.todos.length > 0){
             novaTarefa.numeroLinha = props.todos[props.todos.length - 1].numeroLinha + 1;
         }

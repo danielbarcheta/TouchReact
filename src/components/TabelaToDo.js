@@ -6,7 +6,11 @@ import ToDoItemLinha from './ToDoItemLinha';
 
 function TabelaToDo(props) {
 
-      
+    const deletarTarefa = (numeroTarefaDeletada) => {
+        let filtrado = props.todos.filter((value)=> value.numeroLinha !== numeroTarefaDeletada);
+        props.setTodos(filtrado);
+    }
+
     return (
         <table>
             <thead>
@@ -28,6 +32,7 @@ function TabelaToDo(props) {
                         key={toDoRow.numeroLinha} // Serve para identificar unicamente cada componente filho da lista. Se removermos -> Warning no Console!!
                         numeroLinha={toDoRow.numeroLinha}
                         descricao={toDoRow.descricao}
+                        deletarTarefa={deletarTarefa}
                     />
                 ))
             }
