@@ -6,14 +6,14 @@
   }
 
 .botao-primario{
-  position: absolute;
-  top: 10%;
-  left: 35%;
+text-align: center;
+margin: 1em 0 0 2em;
   font-size: 4em;
   font-family: 'Indie Flower', cursive;
+  color: #00668e;
 }
 
 .botao-primario:hover{
   background-color: transparent;
-  color: #00668e;
+  color: #7d8e94;
 }
