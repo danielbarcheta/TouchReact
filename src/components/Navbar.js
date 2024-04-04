@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Importe o componente Link
 import './Navbar.css';
 
 const Navbar = () => {
@@ -9,9 +10,11 @@ const Navbar = () => {
           <img src="logo-touch-health.png" alt="Touch Health Logo" />
         </span>
         <div className="menu">
-          <button>  
-            <span className="material-symbols-outlined">home</span>
-          </button>
+          <Link to="/">
+            <button>  
+              <span className="material-symbols-outlined">home</span>
+            </button>
+          </Link>
           <button>COC</button>
           <button>Treinamentos</button>
           <button>Mentores</button>
